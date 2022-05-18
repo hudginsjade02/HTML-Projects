@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        
+        <title>Jade's Pages</title>
+        
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', function(){
+                let correct = document.querySelectorAll("#correct");
+                let incorrect = document.querySelectorAll(".incorrect");
+                
+                for (let i = 0; i < correct.length; i++)
+                {
+                    correct[i].addEventListener('click', function(){
+                        correct[i].style.backgroundColor = "green";
+                })
+                }
+                
+                for (let i = 0; i < incorrect.length; i++)
+                {
+                    incorrect[i].addEventListener('click', function(){
+                        incorrect[i].style.backgroundColor = "red";
+                })
+                }
+            });
+            
+        </script>
+    
+    </head>
+    
+    <body>
+        
+        <h1><center>Random Trivia Time!</center></h1>
+        
+        <div class = "container">
+            <div class = "section">
+                <h2>Question 1: What is the capital of Venezuela?</h2>
+                <button id = "correct">Caracas</button>
+                <button class = "incorrect">Tegucigalpa</button>
+                <button class = "incorrect">Managua</button>
+                <button class = "incorrect">Asuncion</button>
+            </div>
+            
+            <div class= "section">
+                <h2>Question 2: What is the biggest planet in the solar system?</h2>
+                <button class = "incorrect">Venus</button>
+                <button class = "incorrect">Saturn</button>
+                <button class = "incorrect">Mars</button>
+                <button id = "correct">Jupiter</button>
+            </div>
+            
+            <div class="section">
+                <h2>Question 3: True or False - Viggo Mortensen broke his toe when kicking the Orc helmet in <i>Lord of the Rings: The Two Towers</i></h2>
+                <button id = "correct">True</button>
+                <button class = "incorrect">False</button>
+            </div>
+            
+            <div class="section">
+                <h2>Question 4: Who wrote the play "A Midsummer Night's Dream"?</h2>
+                <button class = "incorrect">Christopher Marlow</button>
+                <button class = "incorrect">Oscar Wilde</button>
+                <button id = "correct">William Shakespeare</button>
+                <button class = "incorrect">Arthur Miller</button>
+            </div>
+            
+            <div class="section">
+                <h2>Question 5: Did JavaScript derive from Java, or did Java derive from JavaScript?</h2>
+                <button class = "incorrect">JavaScript derived from Java</button>
+                <button class = "incorrect">Java derived from JavaScript</button>
+                <button id = "correct">Neither</button>
+            </div>
+            
+        </div>
+        
+    </body>
+    <p><center><a HREF = "third.html">Hey, listen! There's still more!</a></center></p>
+    <p><center><a HREF = "index.html">Or you can go back.</a></center></p>
+</html>
